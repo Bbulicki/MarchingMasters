@@ -1,2 +1,2 @@
 # MarchingMasters
-Senior Design Project (CI491/492/493)
+Senior Design Project
