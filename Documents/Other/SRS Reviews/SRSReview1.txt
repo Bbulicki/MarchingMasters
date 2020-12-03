@@ -1,0 +1,16 @@
+To the Marching Masters Team,
+
+Reading over your document gave me a strong understanding of every aspect of your project. Requirements are written so that all important information is given while still remaining succinct and readable. The included GUI mock-ups are especially useful and thorough. Overall, each aspect of the SRS is well done.
+
+There are a few points where I did have questions or felt there was a lack of information that might be useful to explain or examine further.
+
+Firstly, can anyone upload or are instructors the only users able to access this functionality? If other users, such as band members, are able to upload documents, events, and assignments, is there any limit to this feature?
+
+Secondly, how are multiple groups managed? Does each group have its own gateway with all options then shown, or are groups selected as options are executed? For example, if I log in as an instructor with both a high school and college band group linked to my account, how are they separated?
+
+Lastly, there is one mock GUI image in the, “Create a Band,” section that has a single button. Is there a reason that this screen exists? If not, it is generally recommended to remove this screen completely and have users progress without seeing it, as it serves no real purpose.
+
+Please reach out if there are any questions about my comments, I am happy to explain them.
+
+Best, Peyton Smiley
+pas352@drexel.edu
