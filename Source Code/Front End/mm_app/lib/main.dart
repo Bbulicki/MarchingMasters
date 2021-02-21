@@ -131,9 +131,74 @@ class DrillVis extends StatelessWidget {
       appBar: AppBar(
         title: Text("Drill Visualizer"),
       ),
-      body: Center(
-        child: Text("Drill"),
-      ),
+      body: 
+      Container(
+        child: Row(
+          children: [
+            Container(width: 500, color: Colors.lightGreen,
+              child:Column(
+                children: [
+                  Text("Test")
+                ],
+              )
+            ),
+            Container(width: 271.5, color: Colors.grey,
+              child:Column(
+                children: [
+                  Container(height: 125, width: 271.5, color: Colors.white24,
+                    child:Row(
+                      children: [
+                        Column(
+                          children:[
+                            Text(""),
+                            Text(""),
+                            Text("                               Current Set                          "),
+                            Text('Coordinate X:'+' Variable X'),
+                            Text('Coordinate Y:'+' Variable Y')
+                          ]
+                        )
+                      ],
+                      ),
+                  ),
+                  Container(height: 125, width: 271.5, color: Colors.white10,
+                    child:Row(
+                      children: [
+                        Text("                 DEVICE NOT CONNECTED")
+                      ],
+                    )
+                  ),
+                  Row(children: [
+                    Center(
+                      child: Row(
+                        children:[
+                          ElevatedButton(
+                            onPressed: () {
+                              // Navigator.push(
+                              //   context,
+                              //   MaterialPageRoute(builder: (context) => DrillVis()),
+                              // );
+                            },
+                            child: Text('<<'),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              // Navigator.push(
+                              //   context,
+                              //   MaterialPageRoute(builder: (context) => DrillVis()),
+                              // );
+                            },
+                            child: Text('>>'),
+                          ),
+                          ],
+                      ),
+                    ),
+                  ],)
+                ],
+              )
+            ),
+          ],
+        ),
+      )
     );
   }
 }
