@@ -138,7 +138,7 @@ class DrillVis extends StatelessWidget {
             Container(width: 500, color: Colors.lightGreen,
               child:Column(
                 children: [
-                  Text("Test")
+                  Text("DRILL VISUAL GOES HERE")
                 ],
               )
             ),
@@ -171,6 +171,7 @@ class DrillVis extends StatelessWidget {
                     Center(
                       child: Row(
                         children:[
+                          Text("                      "),
                           ElevatedButton(
                             onPressed: () {
                               // Navigator.push(
