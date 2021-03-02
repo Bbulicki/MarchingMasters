@@ -9,7 +9,7 @@ uploadDocuments
     response: 
         "upload successful"
     error handling:
-        None
+        none
 
 
 retrieveDocuments
@@ -64,4 +64,19 @@ viewBand
     error handling:
         "band id not found"
         "user id not found"
+
+
+createBand
+    description: creates a band 
+    link: https://zbi1wtjll8.execute-api.us-east-1.amazonaws.com/v1/createband
+    queryParameters: 
+        instructor_id: instructor id for creating band
+    response: 
+        type: json 
+        example:
+            {
+                "band_id": "92913"
+            }
+    error handling:
+        none
 
