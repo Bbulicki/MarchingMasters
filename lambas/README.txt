@@ -10,6 +10,7 @@ uploadDocuments
         "upload successful"
     error handling:
         none
+	*Note: Do not upload an empty documents otherwise you will get an error"
 
 
 retrieveDocuments
