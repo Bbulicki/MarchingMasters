@@ -86,7 +86,7 @@ disbandBand
     description: deletes a band and disassociates band with its corresponding users
     link: https://zbi1wtjll8.execute-api.us-east-1.amazonaws.com/v1/disbandband
     queryParameters:
-        band id for deleting a band and disassociation
+        band_id: for deleting a band and disassociation
     response:
         "success"
     error handling:
@@ -97,8 +97,46 @@ leaveBand
     description: leave a band and disassociate user from its corresponding band 
     link: https://fpj8e63l0i.execute-api.us-east-1.amazonaws.com/default/leaveBand 
     queryParameters:
-        user id for leaving the band and disassociation 
+        user_id: for leaving the band and disassociation 
     response:
         "success"
     error handling:
         "user id not found"
+
+
+sendFeedBack
+    description: sends feedback to a given user id 
+    link: https://zbi1wtjll8.execute-api.us-east-1.amazonaws.com/v1/sendfeedback
+    queryParameters:
+        user_id: for sending feedback
+        feedback: feedback message for the user
+    response:
+        "sent"
+    error handling:
+        none
+
+
+retrieveFeedBack
+    description: returns a list of feedback associated with a given user id 
+    link: https://zbi1wtjll8.execute-api.us-east-1.amazonaws.com/v1/retrievefeedback 
+    queryParameters:
+        user_id: feedback query
+    response:
+        type: json 
+        example:
+            {
+                "feedback": [
+                    "feedback for test_user",
+                    "feedback for test_user",
+                    "jzhang",
+                    "this is new feedback content from postman"
+                ]
+            }
+        *Note the order is last in first out. So, "this is new feedback content from postman" is the most recent feedback.
+    error handling:
+        none
+
+
+
+
+
