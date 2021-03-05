@@ -23,10 +23,10 @@ retrieveDocuments
         example: 
             {
                 "documents": [
-                    "https://mmdrexel.s3.amazonaws.com/test_user/addasdes.csv",
-                    "https://mmdrexel.s3.amazonaws.com/test_user/addresses.csv",
-                    "https://mmdrexel.s3.amazonaws.com/test_user/addresses1.csv",
-                    "https://mmdrexel.s3.amazonaws.com/test_user/test.txt"
+                    "https://mmdrexel.s3.amazonaws.com/documents/test_user/addasdes.csv",
+                    "https://mmdrexel.s3.amazonaws.com/documents/test_user/addresses.csv",
+                    "https://mmdrexel.s3.amazonaws.com/documents/test_user/addresses1.csv",
+                    "https://mmdrexel.s3.amazonaws.com/documents/test_user/test.txt"
                 ]
             }
     error handling:
@@ -133,6 +133,38 @@ retrieveFeedBack
                 ]
             }
         *Note the order is last in first out. So, "this is new feedback content from postman" is the most recent feedback.
+    error handling:
+        none
+
+
+uploadDrill
+    description: uploads a drillsheet into Amazon s3
+    link: https://zbi1wtjll8.execute-api.us-east-1.amazonaws.com/v1/uploaddrill 
+    queryParameters:
+        band_id: for finding the performers associated to the band to upload the drilsheet for 
+        filename: name of the file to create correct path 
+        response:
+            "upload successful"
+        error handling:
+            "band id not found"
+
+
+retrieveDrills
+    description: retrieves a list of links of s3 bucket drills associated w/ the user
+    link: https://zbi1wtjll8.execute-api.us-east-1.amazonaws.com/v1/retrievedrills
+    queryParameters: 
+        user_id: value of user_id 
+    response: 
+        type: json
+        example: 
+            {
+                "documents": [
+                    "https://mmdrexel.s3.amazonaws.com/drillsheets/test_user/addasdes.csv",
+                    "https://mmdrexel.s3.amazonaws.com/drillsheets/test_user/addresses.csv",
+                    "https://mmdrexel.s3.amazonaws.com/drillsheets/test_user/addresses1.csv",
+                    "https://mmdrexel.s3.amazonaws.com/drillsheets/test_user/test.txt"
+                ]
+            }
     error handling:
         none
 
