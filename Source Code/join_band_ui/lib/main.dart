@@ -17,6 +17,9 @@ class JoinBand extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: "Join Band",
+	  theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
       home: new Scaffold(
         appBar: new AppBar(
           title: new Text("Join a Band"),
