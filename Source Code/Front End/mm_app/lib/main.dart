@@ -123,7 +123,6 @@ class LoadDrill extends StatelessWidget {
   }
 }
 
-
 class DrillVis extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
