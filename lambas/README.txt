@@ -95,7 +95,7 @@ disbandBand
 
 leaveBand
     description: leave a band and disassociate user from its corresponding band 
-    link: https://fpj8e63l0i.execute-api.us-east-1.amazonaws.com/default/leaveBand 
+    link: https://zbi1wtjll8.execute-api.us-east-1.amazonaws.com/v1/leaveband
     queryParameters:
         user_id: for leaving the band and disassociation 
     response:
